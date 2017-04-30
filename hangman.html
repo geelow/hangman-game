@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Hangman Game</title>
+
+  <link href="assets/css/bootstrap.min.css" media="screen" rel="stylesheet">
+
+  <link href="assets/css/hangman.css" media="screen" rel="stylesheet" type="text/css">
+</head>
+<!--Begin content-->
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid navbar-custom">
+      <div class="row">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#" id="logo">Hangman</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--end Nev Bar-->
+
+  <div class="container-fluid">
+      <p id="guess"></p>
+      <form name="Input">
+        <input name="compare" type="text" size="5" maxlength="1">
+        <input name="ratebutton" type="button" value="Guess" onClick="compare()">
+
+      <p id="getLetters">Wrong Letters:</p>
+        <img alt="background-image" id="hangman" src="assets/images/preview.jpg"><br />
+        <input name="refresh" type="button" value="New Game" onClick="location.reload()">
+      </form>
+    </div>
+  
+  <footer class="footer">
+    <div class="two-toned-footer-color"></div>
+     <p class="text-muted text-muted-footer text-center">© Copywrite 2017 Jamie Gelo</p>
+  </footer>
+
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+  </script>
+
+  <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+  
+  <script type="text/javascript" src="assets/javascript/hangman.js"></script>
+
+</body>
+</html>
